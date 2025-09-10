@@ -23,10 +23,36 @@ public class Libro {
         this.numerodepaginas = numerodepaginas;
     }
 
-    public void mostrarvalores(){
-        System.out.println("El titulo del libro es: "+ titulo);
-        System.out.println("El nombre del autor es: "+ autor);
-        System.out.println("El numero de páginas es: "+ numerodepaginas);
+    public String getTitulo() {
+        return titulo;
+    }
 
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getAutor() {
+        return autor;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getNumerodepaginas() {
+        return numerodepaginas;
+    }
+
+    public void setNumerodepaginas(int numerodepaginas) {
+        this.numerodepaginas = numerodepaginas;
+    }
+
+    @Override
+    public String toString() {
+        return "La inform" +
+                "titulo='" + titulo + '\'' +
+                ", autor='" + autor + '\'' +
+                ", numerodepaginas=" + numerodepaginas +
+                '}';
     }
 }
