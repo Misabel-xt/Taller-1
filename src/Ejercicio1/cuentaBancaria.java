@@ -4,11 +4,11 @@ package Ejercicio1;
 //2. Un constructor parametrizado con dos parámetros (numeroCuenta y tipoCuenta).
 //3. Un constructor sobrecargado con tres parámetros (numeroCuenta, saldo, y tipoCuenta).
 public class cuentaBancaria {
-    private int numeroCuenta:
+    private int numeroCuenta;
     private int  saldo;
-    private String tipoCuenta:
+    private String tipoCuenta;
 
-    public cuenraBancaria(){
+    public cuentaBancaria(){
         numeroCuenta = 00000;
         saldo = 0;
         tipoCuenta = "Sin tipo de cuenta";
@@ -47,4 +47,10 @@ public class cuentaBancaria {
     public void setTipoCuenta(String tipoCuenta) {
         this.tipoCuenta = tipoCuenta;
     }
+    
+    @Override
+    public String toString() {
+        return "CuentaBancaria: " + numeroCuenta + ", Tipo: " + tipoCuenta + ", Saldo: $" + saldo;
+    }
 }
+

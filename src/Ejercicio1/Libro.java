@@ -4,7 +4,6 @@ package Ejercicio1;
 //2. Un constructor parametrizado que permita asignar valores específicos.
 //3. Métodos para mostrar los detalles del libro.
 
-import javax.swing.*;
 
 public class Libro {
     private String titulo;
@@ -47,12 +46,9 @@ public class Libro {
         this.numerodepaginas = numerodepaginas;
     }
 
-    @Override
+     @Override
     public String toString() {
-        return "La inform" +
-                "titulo='" + titulo + '\'' +
-                ", autor='" + autor + '\'' +
-                ", numerodepaginas=" + numerodepaginas +
-                '}';
+        return "Libro: " + titulo + ", Autor: " + autor + ", Páginas: " + numerodepaginas;
     }
 }
+
